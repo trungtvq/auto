@@ -26,6 +26,11 @@ func main() {
 		ticker := time.Tick(time.Minute)
 		for range ticker {
 			mouse.ClickAt("left", 1590, 166)
+			mouse.ClickAt("left", 1590, 166)
+			mouse.ClickAt("left", 1590, 166)
+
+			mouse.ClickAt("left", 1590-960, 166)
+			mouse.ClickAt("left", 1590-960, 166)
 			mouse.ClickAt("left", 1590-960, 166)
 
 		}
