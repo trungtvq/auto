@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"sync"
+	"time"
+
 	"github.com/trungtvq/auto/cmd"
 	"github.com/trungtvq/auto/cmd2"
 	"github.com/trungtvq/auto/mouse"
-	"sync"
-	"time"
 )
 
 func main() {
@@ -26,6 +27,11 @@ func main() {
 		ticker := time.Tick(time.Minute)
 		for range ticker {
 			mouse.ClickAt("left", 1590, 166)
+			mouse.ClickAt("left", 1590, 166)
+			mouse.ClickAt("left", 1590, 166)
+
+			mouse.ClickAt("left", 1590-960, 166)
+			mouse.ClickAt("left", 1590-960, 166)
 			mouse.ClickAt("left", 1590-960, 166)
 
 		}
